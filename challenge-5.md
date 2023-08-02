@@ -6,7 +6,7 @@ In this challenge you're supposed to retrieve the groups of the Hobby Hive user 
   <img src="./images/5a.png" width="350px">
 </p>
 
-To achieve that you first have to implement the `getGroupsOfUser(userId)` method inside the `groupRepository` file which returns a Promise as shown below.
+To achieve this you first have to implement the `getGroupsOfUser(userId)` method inside the `groupRepository.js` file which returns a Promise as shown below.
 ```javascript
 return new Promise((resolve, reject) => {
   knex_db
