@@ -153,7 +153,11 @@ Although the challenges are independent from one another, it will be easier for 
 
 Have fun!
 
-### Hobby Scout Challenges
+|       |
+| ----------- |
+| [Challenge 0](./challenge-0.md)|
+
+<!-- ### Hobby Scout Challenges
 |       |  |  |
 | ----------- | ----------- |----------- |
 | [Challenge 0](./challenge-0.md)| [Challenge 1](./challenge-1.md)|[Challenge 2](./challenge-2.md)|
@@ -171,8 +175,7 @@ Have fun!
 |       |  |  |
 | ----------- | ----------- |----------- |
 | [Challenge 13](./challenge-13.md)|[Challenge 14](./challenge-14.md)|[Challenge 15](./challenge-15.md)|
-| [Challenge 16](./challenge-16.md)| | |
-
+| [Challenge 16](./challenge-16.md)| | | -->
 
 ## Getting support
 
