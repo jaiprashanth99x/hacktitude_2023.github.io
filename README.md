@@ -153,18 +153,18 @@ Although the challenges are independent from one another, it will be easier for 
 
 Have fun!
 
-<!-- |       |
+|       |
 | ----------- |
-| [Challenge 0](./challenge-0.md)| -->
+| [Challenge 0](./challenge-0.md)|
 
-|       |  |  |
+<!-- |       |  |  |
 | ----------- | ----------- |----------- |
 | [Challenge 0](./challenge-0.md)| [Challenge 1](./challenge-1.md)|[Challenge 2](./challenge-2.md)|
 | [Challenge 3](./challenge-3.md)| [Challenge 4](./challenge-4.md)|[Challenge 5](./challenge-5.md)|
 | [Challenge 6](./challenge-6.md)| [Challenge 7](./challenge-7.md)|[Challenge 8](./challenge-8.md)|
 | [Challenge 9](./challenge-9.md)| [Challenge 10](./challenge-10.md)|[Challenge 11](./challenge-11.md)|
 | [Challenge 12](./challenge-12.md)| [Challenge 13](./challenge-13.md)|[Challenge 14](./challenge-14.md)|
-| [Challenge 15](./challenge-15.md)| [Challenge 16](./challenge-16.md)||
+| [Challenge 15](./challenge-15.md)| [Challenge 16](./challenge-16.md)|| -->
 
 ## Getting support
 
