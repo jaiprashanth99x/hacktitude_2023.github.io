@@ -1,12 +1,14 @@
 # Challenge 9 - Get the relevent groups of user
 
+#### Please refer to the sub module Project Mate for Challenge 9 to Challenge 16 
+
 In this challenge you're supposed to retrieve the groups of the Hobby Hive user and display them on the side bar under the groups list. Currently the groups list will be empty as shown in the image below.
 
 <p align="center">
   <img src="./images/5a.png" width="350px">
 </p>
 
-To achieve this you first have to implement the `getGroupsOfUser(userId)` method inside the `groupRepository.js` file which returns a Promise as shown below.
+To achieve this, you first have to implement the `getGroupsOfUser(userId)` method inside the `groupRepository.js` file which returns a Promise as shown below.
 ```javascript
 return new Promise((resolve, reject) => {
   knex_db

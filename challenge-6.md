@@ -1,6 +1,6 @@
 # Challenge 6 - Assign user to the UserGroup and Retrieving groups joined by current user
 
-In this challenge you have to complete another set of two features found at the Join Groups & Joined Group page of Collab Hub
+In this challenge you have to complete another set of two features found at the Join Groups & Joined Group page of Colab Hub
 
 <p align="center">
   <img src="./images/14a.png" width="700px">

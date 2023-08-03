@@ -1,5 +1,7 @@
 # Challenge 1
 
+#### Please refer to the sub module Hobby Scout for Challenge 1 to Challenge 4
+
 You are building a hobby group recommender system for a social platform that connects people with similar hobbies.
 
 # Challenge 1.a
