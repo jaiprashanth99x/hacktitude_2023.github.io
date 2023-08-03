@@ -1,4 +1,4 @@
-# Challenge 9 - Edit project details
+<!-- # Challenge 9 - Edit project details
 
 The user is able to edit and update the details of a project only if that user is the owner of that project.
 
@@ -43,4 +43,6 @@ router.put("<INSERT ROUTE HERE>", async (req, res) => {
 });
 ```
 
-**HINT** - Don't forget to export the defined methods in the necessary files.
+**HINT** - Don't forget to export the defined methods in the necessary files. -->
+
+### Don't try to be too smart :p

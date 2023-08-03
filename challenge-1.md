@@ -1,4 +1,4 @@
-# Challenge 1
+<!-- # Challenge 1
 
 You are building a hobby group recommender system for a social platform that connects people with similar hobbies.
 
@@ -206,4 +206,6 @@ After successful creation, you will receive the below output:
 # Challenge 1.b
 
 Complete the `getUser(id)` method inside the userRepository file. It takes `id` which is the user id as an argument and returns the respective user as the output. Here's what you need to do:
-1. Return a response message `User not found!` if the user `id` was not found.
+1. Return a response message `User not found!` if the user `id` was not found. -->
+
+### Don't try to be too smart :p

@@ -1,4 +1,4 @@
-# Challenge 6 - Get users of a group bug fix
+<!-- # Challenge 6 - Get users of a group bug fix
 
 This challenge is to fix a bug in the system where the users of a group is not being retrieved properly and therefore "undefined" is being displayed in the project detail pop up modals as shown in the image below.
 
@@ -12,4 +12,6 @@ Your task is to fix this bug by going through the code base and finally make sur
   <img src="./images/6b.png" width="350px">
 </p>
 
-**HINT** - This task is similar to the task you'll completed during the test run. 
+**HINT** - This task is similar to the task you'll completed during the test run.  -->
+
+### Don't try to be too smart :p

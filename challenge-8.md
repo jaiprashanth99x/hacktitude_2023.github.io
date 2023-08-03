@@ -1,4 +1,4 @@
-# Challenge 8 - Add new task to a project
+<!-- # Challenge 8 - Add new task to a project
 
 After successfully completing the Challenge 6 you can now click on the newly create project card and view the project details on the pop-up modal and shown below.
 
@@ -24,4 +24,6 @@ To achieve this you first have to implement the `addNewTask(taskDetails)` method
 
 The Promise has to resolve a message saying `"success"` after successfully saving the task details in the tasks table in the database.
 
-**Note** - Always cross check with the database tables whether the API calls work properly and the database has been updated. You can always run `knex run:seed` to get back to the default data in the database.
+**Note** - Always cross check with the database tables whether the API calls work properly and the database has been updated. You can always run `knex run:seed` to get back to the default data in the database. -->
+
+### Don't try to be too smart :p
