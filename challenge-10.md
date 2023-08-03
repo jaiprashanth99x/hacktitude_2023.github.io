@@ -1,4 +1,4 @@
-<!-- # Challenge 10 - Edit task details
+# Challenge 10 - Edit task details
 
 The user is also able to edit and update the details of a task of a project.
 
@@ -22,6 +22,4 @@ Afterwards as done in the previous task you have to,
 
 2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateTaskReq(details, taskId)` method.
 
-**HINT** - Don't forget to export the defined methods in the necessary files. -->
-
-### Don't try to be too smart :p
+**HINT** - Don't forget to export the defined methods in the necessary files.

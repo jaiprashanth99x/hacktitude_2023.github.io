@@ -1,4 +1,4 @@
-<!-- # Challenge 16 - Shared Documents Upload & Download
+# Challenge 16 - Shared Documents Upload & Download
 
 After completing Challenge 13 & 14, your users will be able to join groups now. Once you are a part of group, you can go to the Shared Documents page and view the shared documents of your joined group and download them.
 
@@ -30,6 +30,4 @@ Expected object for `data` parameter:
 
 **HINT** 
 -  For the frontend implementation, you can submit the shared document using a `FormData` interface. The file should be stored under the key, `doc`. 
-- `File Name` and `File Path` do not need to be passed from the frontend as these information can be derived from the actual file data and the assigned server path to store the files. -->
-
-### Don't try to be too smart :p
+- `File Name` and `File Path` do not need to be passed from the frontend as these information can be derived from the actual file data and the assigned server path to store the files.

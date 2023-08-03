@@ -1,4 +1,4 @@
-<!-- # Challenge 14 - Assign user to the UserGroup and Retrieving groups joined by current user
+# Challenge 14 - Assign user to the UserGroup and Retrieving groups joined by current user
 
 In this challenge you have to complete another set of two features found at the Join Groups & Joined Group page of Collab Hub
 
@@ -26,6 +26,4 @@ Expected object for `data` parameter:
 
 
 **HINT** 
--  After adding a new mapping at UserGroups table, you can use getGroupsFromUser function to validate if you can retrieve the expected groups joined by the current user. -->
-
-### Don't try to be too smart :p
+-  After adding a new mapping at UserGroups table, you can use getGroupsFromUser function to validate if you can retrieve the expected groups joined by the current user.

@@ -1,4 +1,4 @@
-<!-- # Challenge 7 - Add new project to a group
+# Challenge 7 - Add new project to a group
 
 The user can click on either one of those groups displayed and get the relevent project and task details regarding the group as displayed in the image below.
 
@@ -24,6 +24,4 @@ To achieve this you first have to implement the `addNewProject(projectDetails)` 
 
 The Promise has to resolve a message saying `"success"` after successfully saving the project details in the projects table in the database.
 
-**Note** - Always cross check with the database tables whether the API calls work properly and the database has been updated. You can always run `knex run:seed` to get back to the default data in the database. -->
-
-### Don't try to be too smart :p
+**Note** - Always cross check with the database tables whether the API calls work properly and the database has been updated. You can always run `knex run:seed` to get back to the default data in the database.
