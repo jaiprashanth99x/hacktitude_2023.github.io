@@ -1,4 +1,4 @@
-# Challenge 4 - View Friends and Their Details
+<!-- # Challenge 4 - View Friends and Their Details
 
 In this challenge, you are required to implement functionalities to allow users to view their existing friends and their details in the HobbieSkout application.
 
@@ -84,4 +84,6 @@ After successful implementation, you will be able to view the friends through th
 <p align="center">
   <img src="./images/4a.png" width="350px">
 </p>
-Note: The user avatar image can be different; ignore it as it was generated randomly.
+Note: The user avatar image can be different; ignore it as it was generated randomly. -->
+
+### Don't try to be too smart :p

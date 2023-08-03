@@ -1,4 +1,4 @@
-# Challenge 15 - Whiteboard Save & Load
+<!-- # Challenge 15 - Whiteboard Save & Load
 
 After completing Challenge 13 & 14, your users will be able to join groups now. Once you are a part of group, you can go to the Whiteboard page and view the whiteboard of your joined group.
 
@@ -27,4 +27,6 @@ Expected object for `data` parameter:
 
 
 **HINT** 
--  Make sure to check your JSON is submitted as a string when you are calling the API.
+-  Make sure to check your JSON is submitted as a string when you are calling the API. -->
+
+### Don't try to be too smart :p

@@ -1,4 +1,4 @@
-# Challenge 13 - Search For Groups With Keyword and Create New Groups
+<!-- # Challenge 13 - Search For Groups With Keyword and Create New Groups
 
 In this challenge you have to complete the two features found at the Join Groups page of Collab Hub
 
@@ -28,4 +28,6 @@ Expected object for `data` parameter:
 
 **HINT** 
 -  When searching for groups using a keyword, you should consider what happens when the keyword returns an empty array. 
-- When inserting a new group into the Groups table, it is useful if you return the new `Id` of the created group.
+- When inserting a new group into the Groups table, it is useful if you return the new `Id` of the created group. -->
+
+### Don't try to be too smart :p
