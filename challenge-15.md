@@ -10,11 +10,11 @@ In this challenge you have to enable the user to update the status of a project 
   <img src="./images/11b.png" width="350px">
 </p>
 
-To achieve this you have to impelement the `updateProjectStatus(projectId, status)` method in the `groupRepository` file and this time it has to be returning a Promise which has an UPDATE query which updates the status of the project using the projectId. 
+To achieve this, you have to impelement the `updateProjectStatus(projectId, status)` method in the `groupRepository` file and this time it has to be returning a Promise which has an UPDATE query which updates the status of the project using the projectId. 
 
 The Promise has to resolve a message saying `"success"`.
 
-Afterwards as done in the previous tasks you have to,
+Afterwards, as done in the previous tasks you have to,
 
 1. Implement a method called `updateProjectStatusReq(projectId, status)` in the `groupService.js` file which will call the `groupRepository.updateProjectStatus(projectId, status)` method and return the response.
 

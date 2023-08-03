@@ -10,7 +10,7 @@ In this challenge you have to enable the user to update the status of a task as 
   <img src="./images/12b.png" width="350px">
 </p>
 
-To achieve this you have to impelement the `updateTaskStatus(taskId, status)` method in the `groupRepository` file and this time it has to be returning a Promise which has an UPDATE query which updates the status of the task using the taskId. 
+To achieve this, you have to impelement the `updateTaskStatus(taskId, status)` method in the `groupRepository` file and this time it has to be returning a Promise which has an UPDATE query which updates the status of the task using the taskId. 
 
 The Promise has to resolve a message saying `"success"`.
 

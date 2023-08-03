@@ -12,4 +12,4 @@ Your task is to fix this bug by going through the code base and finally make sur
   <img src="./images/6b.png" width="350px">
 </p>
 
-**HINT** - This task is similar to the task you'll completed during the test run. 
+**HINT** - This task is similar to the task which was completed during the test run. 

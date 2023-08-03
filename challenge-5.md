@@ -1,6 +1,8 @@
 # Challenge 5 - Search For Groups With Keyword and Create New Groups
 
-In this challenge you have to complete the two features found at the Join Groups page of Collab Hub
+#### Please refer to the sub module Colab Hub for Challenge 1 to Challenge 4
+
+In this challenge you have to complete the two features found at the Join Groups page of Colab Hub
 
 <p align="center">
   <img src="./images/13a.png" width="700px">

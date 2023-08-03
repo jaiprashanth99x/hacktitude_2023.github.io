@@ -82,9 +82,9 @@ To confirm that the app is up and running you can right click on the index.html 
 
 The system you are about to develop is a platform specifically for connecting people with similar hobbies. Users can join communities, share tips and tricks, and collaborate on day-to-day activities related to their hobbies. The application consists of 3 main sub modules named,
 
-1. **Colab Hub** : This sub module enables users to create a virtual collaboration platform for hobbyists to work together on various activities using shared whiteboard, chat functionality, enabling team formation and goal-oriented projects.
-2. **Project Mate** : Integrate activity management tools within the app to help users organize and track their hobby activities effectively. Users can create tasks, set deadlines, assign responsibilities, and track progress. This feature can enhance productivity and foster teamwork within the community.
-3. **Hobby Scout** : This submodule revolutionizes the way users connect and collaborate based on their passions.  It offers personalized Friend Recommendations through a Hobby-Matching Algorithm, suggesting users who share necessary hobbies and streamlining team formation.
+1. **Hobby Scout** : This submodule revolutionizes the way users connect and collaborate based on their passions.  It offers personalized Friend Recommendations through a Hobby-Matching Algorithm, suggesting users who share necessary hobbies and streamlining team formation.
+2. **Colab Hub** : This sub module enables users to create a virtual collaboration platform for hobbyists to work together on various activities using shared whiteboard, chat functionality, enabling team formation and goal-oriented projects.
+3. **Project Mate** : Integrate activity management tools within the app to help users organize and track their hobby activities effectively. Users can create tasks, set deadlines, assign responsibilities, and track progress. This feature can enhance productivity and foster teamwork within the community.
 
  
 You can use the following credentials to login as an already existing user in seed data. Navigate the application using the main menu.
@@ -153,16 +153,18 @@ Although the challenges are independent from one another, it will be easier for 
 
 Have fun!
 
-<!-- Have to change the filename on the hackathon day -->
+<!-- Have to change the filepath on the hackathon day -->
 
 |       |  |  |
-| ----------- | ----------- |----------- |
-| [Challenge 0](./default-challenge.md)| [Challenge 1](./default-challenge.md)|[Challenge 2](./default-challenge.md)|
-| [Challenge 3](./default-challenge.md)| [Challenge 4](./default-challenge.md)|[Challenge 5](./default-challenge.md)|
-| [Challenge 6](./default-challenge.md)| [Challenge 7](./default-challenge.md)|[Challenge 8](./default-challenge.md)|
-| [Challenge 9](./default-challenge.md)| [Challenge 10](./default-challenge.md)|[Challenge 11](./default-challenge.md)|
-| [Challenge 12](./default-challenge.md)| [Challenge 13](./default-challenge.md)|[Challenge 14](./default-challenge.md)|
-| [Challenge 15](./default-challenge.md)| [Challenge 16](./default-challenge.md)||
+| Hobby Scout | Colab Hub | Project Mate |
+| [Challenge 0](./default-challenge.md)| [Challenge 5](./default-challenge.md)| [Challenge 9](./default-challenge.md) |
+| [Challenge 1](./default-challenge.md)| [Challenge 6](./default-challenge.md)| [Challenge 10](./default-challenge.md) |
+| [Challenge 2](./default-challenge.md)| [Challenge 7](./default-challenge.md)| [Challenge 11](./default-challenge.md) |
+| [Challenge 3](./default-challenge.md)| [Challenge 8](./default-challenge.md)| [Challenge 12](./default-challenge.md) |
+| [Challenge 4](./default-challenge.md)| | [Challenge 13](./default-challenge.md) |
+| | | [Challenge 14](./default-challenge.md) |
+| | | [Challenge 15](./default-challenge.md) |
+| | | [Challenge 16](./default-challenge.md) |
 
 ## Getting support
 
