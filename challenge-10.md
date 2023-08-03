@@ -18,7 +18,7 @@ The Promise has to resolve a message saying `"success"`.
 
 Afterwards as done in the previous task you have to,
 
-1. Implement a method called `updateProjectReq(details, projectId)` in the `groupService.js` file which will call the `groupRepository.updateTask(details, taskId)` method and return the response.
+1. Implement a method called `updateTaskReq(details, taskId)` in the `groupService.js` file which will call the `groupRepository.updateTask(details, taskId)` method and return the response.
 
 2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateTaskReq(details, taskId)` method.
 
