@@ -1,4 +1,4 @@
-<!-- # Challenge 11 - Update project status
+# Challenge 11 - Update project status
 
 In this challenge you have to enable the user to update the status of a project and the project has to be switched to the correct swim lane in the project dashboard depending on its status.
 
@@ -20,6 +20,4 @@ Afterwards as done in the previous tasks you have to,
 
 2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateProjectStatusReq(projectId, status)` method.
 
-**HINT** - Don't forget to export the defined methods in the necessary files. -->
-
-### Don't try to be too smart :p
+**HINT** - Don't forget to export the defined methods in the necessary files.

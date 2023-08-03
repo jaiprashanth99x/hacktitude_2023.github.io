@@ -1,4 +1,4 @@
-<!-- # Challenge 3 - Friend Request Management
+# Challenge 3 - Friend Request Management
 
 In this challenge, you are required to implement functionalities related to managing friend requests in the `HobbyScout` application.
 
@@ -154,6 +154,4 @@ The test verifies that the system can reject a friend request and remove it from
 
 On successful rejection , API ```/api/friends/${reqId2}/reject-request``` should return  ```"Request deleted successfully"```. Also, the relevant record should be deleted from the database. Update the method `rejectReq(id)` inside the `friendsRepository` to reject the friend request by deleting the relevant record from the `friend` table. Here's what you have to do,
 1. Rewrite the SQL query in the method `rejectReq(id)` inside the `friendsRepository` to delete a friend request by removing the relevant record from the `friends` table. Parameter `id` is the `id` attribute in the `friends` table.
-2. Return `"Request deleted successfully"` after successful deletion. -->
-
-### Don't try to be too smart :p
+2. Return `"Request deleted successfully"` after successful deletion.

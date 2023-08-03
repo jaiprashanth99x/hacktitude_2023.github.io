@@ -1,4 +1,4 @@
-<!-- # Challenge 5 - Get the relevent groups of user
+# Challenge 5 - Get the relevent groups of user
 
 In this challenge you're supposed to retrieve the groups of the Hobby Hive user and display them on the side bar under the groups list. Currently the groups list will be empty as shown in the image below.
 
@@ -34,6 +34,4 @@ After successfully retrieving the groups list using the SQL query the relevent g
 
 <p align="center">
   <img src="./images/5b.png" width="350px">
-</p> -->
-
-### Don't try to be too smart :p
+</p>

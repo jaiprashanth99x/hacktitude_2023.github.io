@@ -1,4 +1,4 @@
-<!-- # Challenge 12 - Update task status
+# Challenge 12 - Update task status
 
 In this challenge you have to enable the user to update the status of a task as similar to the previous challenge.
 
@@ -20,6 +20,4 @@ Afterwards as done in the previous task you have to,
 
 2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateTaskStatusReq(taskId, status)` method.
 
-**HINT** - Don't forget to export the defined methods in the necessary files. -->
-
-### Don't try to be too smart :p
+**HINT** - Don't forget to export the defined methods in the necessary files.

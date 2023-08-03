@@ -1,4 +1,4 @@
-<!-- # Challenge 2
+# Challenge 2
 
 Welcome to HobbyScout, a platform designed to help you find friends who share similar hobbies and interests. Your mission is to implement core functionalities for the HobbyScout application.
 
@@ -121,6 +121,4 @@ After successful implementation, you will be able to view the suggested friends 
 <p align="center">
   <img src="./images/2a.png" width="350px">
 </p>
-Note: The user avatar images can be different; ignore them as they were generated randomly. -->
-
-### Don't try to be too smart :p
+Note: The user avatar images can be different; ignore them as they were generated randomly.
