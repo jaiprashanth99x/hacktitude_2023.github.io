@@ -1,29 +1,25 @@
-# Challenge 14 - Assign user to the UserGroup and Retrieving groups joined by current user
+# Challenge 14 - Edit task details
 
-In this challenge you have to complete another set of two features found at the Join Groups & Joined Group page of Collab Hub
-
-<p align="center">
-  <img src="./images/14a.png" width="700px">
-</p>
+The user is also able to edit and update the details of a task of a project.
 
 <p align="center">
-  <img src="./images/14b.png" width="700px">
+  <img src="./images/10a.png" width="350px">
 </p>
 
-Your task involves completing the codes in these following files:
-`groupRepository.js`,`groupService.js`.
+After clicking on the save button the updated details will be shown on the task detail modal as shown in the image below.
 
-1. Implement a method called `addUserToGroup(data)` in the `groupService.js` file which will call a function of same name and parameter from `groupRepository.js` method and return a status code of `200` as a success response when a record is created at the UserGroups table successfully.  
-Expected object for `data` parameter:
-```json
-{
-    group_id:"<SELECTED GROUP ID>",
-    user_id:"<CURRENT USER ID>"
-}
-```
+<p align="center">
+  <img src="./images/10b.png" width="350px">
+</p>
 
-2. Implement a method called `getGroupsFromUser(userId)` in the `groupService.js` file which will call a function of same name and parameter from `groupRepository.js` method. It will return an array of groups which matches the provided user id. You will need to make use the mapping from the UserGroups table.
+To achieve that you first have to implement the `updateTask(details, taskId)` method inside the `groupRepository.js` file where a Promise with an UPDATE query is returned. 
 
+The Promise has to resolve a message saying `"success"`.
 
-**HINT** 
--  After adding a new mapping at UserGroups table, you can use getGroupsFromUser function to validate if you can retrieve the expected groups joined by the current user.
+Afterwards as done in the previous task you have to,
+
+1. Implement a method called `updateTaskReq(details, taskId)` in the `groupService.js` file which will call the `groupRepository.updateTask(details, taskId)` method and return the response.
+
+2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateTaskReq(details, taskId)` method.
+
+**HINT** - Don't forget to export the defined methods in the necessary files.

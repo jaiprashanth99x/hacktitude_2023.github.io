@@ -1,27 +1,30 @@
-# Challenge 7 - Add new project to a group
+# Challenge 7 - Whiteboard Save & Load
 
-The user can click on either one of those groups displayed and get the relevent project and task details regarding the group as displayed in the image below.
-
-<p align="center">
-  <img src="./images/7a.png" width="350px">
-</p>
-
-In this challenge your task is to implement the funtionaility to add a new project to the relevent group.
-
-When the user clicks on the `Add Project +` button on the right hand top corner of the page a modal will be visible and when the user enters project details and clicks on the `Save` button an alert will be displayed with a relevent message.
+After completing Challenge 13 & 14, your users will be able to join groups now. Once you are a part of group, you can go to the Whiteboard page and view the whiteboard of your joined group.
 
 <p align="center">
-  <img src="./images/7b.png" width="350px">
+  <img src="./images/15a.png" width="700px">
 </p>
-
-After the page reloads and upon clicking on the relevent group the newly added project will be displayed on the `To-Do` column.
 
 <p align="center">
-  <img src="./images/7c.png" width="350px">
+  <img src="./images/15b.png" width="700px">
 </p>
 
-To achieve this you first have to implement the `addNewProject(projectDetails)` method inside the `groupRepository.js` file similar to the previous task but in this case the SQL query will be an INSERT query with all the details obtained in the `projectDetails` argument but in the order of the columns in the projects table.
+Your task involves completing the codes in these following files:
+`colabWhiteBoardRepository.js`,`colabService.js`.
 
-The Promise has to resolve a message saying `"success"` after successfully saving the project details in the projects table in the database.
+1. Implement a method called `addWhiteBoardData(data)` in the `colabService.js` file which will call a function of same name and parameter from `colabWhiteBoardRepository.js` method and return a status code of `200` as a success response when a record is created at the `colab_whiteboard` table successfully. Since, the whiteboard is shared by a group, you may need to `UPDATE` an existing record if there is a row with selected `group ID`.
+Expected object for `data` parameter:
+```json
+{
+    whiteboard_json:"<JSON STRING>",
+    group_id:"<SELECTED GROUP ID>",
+    user_id:"<CURRENT USER ID>"
+}
+```
 
-**Note** - Always cross check with the database tables whether the API calls work properly and the database has been updated. You can always run `knex run:seed` to get back to the default data in the database.
+2. Implement a method called `getWhiteBoardDataByGroup(group_id)` in the `colabService.js` file which will call a function of same name and parameter from `colabWhiteBoardRepository.js` method. It will return the whiteboard `data`. This will allow the Whiteboard page to restore the whiteboard content if a group member has made some changes. 
+
+
+**HINT** 
+-  Make sure to check your JSON is submitted as a string when you are calling the API.

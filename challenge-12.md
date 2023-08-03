@@ -1,23 +1,27 @@
-# Challenge 12 - Update task status
+# Challenge 12 - Add new task to a project
 
-In this challenge you have to enable the user to update the status of a task as similar to the previous challenge.
-
-<p align="center">
-  <img src="./images/12a.png" width="350px">
-</p>
+After successfully completing the Challenge 6 you can now click on the newly create project card and view the project details on the pop-up modal and shown below.
 
 <p align="center">
-  <img src="./images/12b.png" width="350px">
+  <img src="./images/8a.png" width="350px">
 </p>
 
-To achieve this you have to impelement the `updateTaskStatus(taskId, status)` method in the `groupRepository` file and this time it has to be returning a Promise which has an UPDATE query which updates the status of the task using the taskId. 
+In this challenge your task is to implement the funtionaility to add a new task to the relevent project.
 
-The Promise has to resolve a message saying `"success"`.
+When the user clicks on the `Add Task +` button on the modal content will changed and when the user enters the task details and clicks on the `Save` button an alert will be displayed with a relevent message.
 
-Afterwards as done in the previous task you have to,
+<p align="center">
+  <img src="./images/8b.png" width="350px">
+</p>
 
-1. Implement a method called `updateTaskStatusReq(taskId, status)` in the `groupService.js` file which will call the `groupRepository.updateTaskStatus(details, taskId)` method and return the response.
+After the page reloads and upon clicking on the relevent project the newly added task will be displayed under the tasks list.
 
-2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateTaskStatusReq(taskId, status)` method.
+<p align="center">
+  <img src="./images/8c.png" width="350px">
+</p>
 
-**HINT** - Don't forget to export the defined methods in the necessary files.
+To achieve this you first have to implement the `addNewTask(taskDetails)` method inside the `groupRepository.js` file similar to the previous tasks but in this case the SQL query will be an INSERT query with all the details obtained in the `taskDetails` argument but in the order of the columns in the tasks table.
+
+The Promise has to resolve a message saying `"success"` after successfully saving the task details in the tasks table in the database.
+
+**Note** - Always cross check with the database tables whether the API calls work properly and the database has been updated. You can always run `knex run:seed` to get back to the default data in the database.

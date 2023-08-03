@@ -1,15 +1,29 @@
-# Challenge 6 - Get users of a group bug fix
+# Challenge 6 - Assign user to the UserGroup and Retrieving groups joined by current user
 
-This challenge is to fix a bug in the system where the users of a group is not being retrieved properly and therefore "undefined" is being displayed in the project detail pop up modals as shown in the image below.
-
-<p align="center">
-  <img src="./images/6a.png" width="350px">
-</p>
-
-Your task is to fix this bug by going through the code base and finally make sure that the relevent names of the users are being displayed in the front end properly as shown in the image below.
+In this challenge you have to complete another set of two features found at the Join Groups & Joined Group page of Collab Hub
 
 <p align="center">
-  <img src="./images/6b.png" width="350px">
+  <img src="./images/14a.png" width="700px">
 </p>
 
-**HINT** - This task is similar to the task you'll completed during the test run. 
+<p align="center">
+  <img src="./images/14b.png" width="700px">
+</p>
+
+Your task involves completing the codes in these following files:
+`groupRepository.js`,`groupService.js`.
+
+1. Implement a method called `addUserToGroup(data)` in the `groupService.js` file which will call a function of same name and parameter from `groupRepository.js` method and return a status code of `200` as a success response when a record is created at the UserGroups table successfully.  
+Expected object for `data` parameter:
+```json
+{
+    group_id:"<SELECTED GROUP ID>",
+    user_id:"<CURRENT USER ID>"
+}
+```
+
+2. Implement a method called `getGroupsFromUser(userId)` in the `groupService.js` file which will call a function of same name and parameter from `groupRepository.js` method. It will return an array of groups which matches the provided user id. You will need to make use the mapping from the UserGroups table.
+
+
+**HINT** 
+-  After adding a new mapping at UserGroups table, you can use getGroupsFromUser function to validate if you can retrieve the expected groups joined by the current user.

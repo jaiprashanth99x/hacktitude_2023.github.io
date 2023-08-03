@@ -1,37 +1,31 @@
-# Challenge 5 - Get the relevent groups of user
+# Challenge 5 - Search For Groups With Keyword and Create New Groups
 
-In this challenge you're supposed to retrieve the groups of the Hobby Hive user and display them on the side bar under the groups list. Currently the groups list will be empty as shown in the image below.
+In this challenge you have to complete the two features found at the Join Groups page of Collab Hub
 
 <p align="center">
-  <img src="./images/5a.png" width="350px">
+  <img src="./images/13a.png" width="700px">
 </p>
 
-To achieve this you first have to implement the `getGroupsOfUser(userId)` method inside the `groupRepository.js` file which returns a Promise as shown below.
-```javascript
-return new Promise((resolve, reject) => {
-  knex_db
-    .raw(
-      `
-      <INSERT SQL QUERY HERE>
-      `,
-      [userid]
-    )
-    .then((result) => {
-      const groups = result;
-      resolve(groups);
-    })
-    .catch((error) => {
-      reject(error);
-    });
-});
+<p align="center">
+  <img src="./images/13b.png" width="700px">
+</p>
+
+Your task involves completing the codes in these following files:
+`groupRepository.js`,`groupService.js`.
+
+1. Implement a method called `getGroupsFromKeyword(keyword)` in the `groupService.js` file which will call a function of same name and parameter from `groupRepository.js` method and return an array containing the groups matching to the keyword provided from the frontend.
+
+2. Implement a method called `addNewGroup(data)` in the `groupService.js` file which will call a function of same name and parameter from `groupRepository.js` method and return a status code of `200` as a success response when a new group is created successfully.
+
+Expected object for `data` parameter:
+```json
+{
+    group_name:"<GROUP NAME>",
+    group_desc:"<GROUP DESCRIPTION>"
+}
 ```
 
-Your task is to paste the above code block inside the `getGroupsOfUser(userId)` method and add the relevent sql query which uses the `userId` as a parameter to get the specific groups of the user with the passed userId.
 
-**Note** - There are 3 tables as users, groups, and userGroups and you're supposed to get all information regarding the groups of which the current user is a part of.
-
-After successfully retrieving the groups list using the SQL query the relevent groups will be visible as shown in the image below.
-
-<p align="center">
-  <img src="./images/5b.png" width="350px">
-</p>
+**HINT** 
+-  When searching for groups using a keyword, you should consider what happens when the keyword returns an empty array. 
+- When inserting a new group into the Groups table, it is useful if you return the new `Id` of the created group.

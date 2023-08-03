@@ -1,23 +1,27 @@
-# Challenge 11 - Update project status
+# Challenge 11 - Add new project to a group
 
-In this challenge you have to enable the user to update the status of a project and the project has to be switched to the correct swim lane in the project dashboard depending on its status.
-
-<p align="center">
-  <img src="./images/11a.png" width="350px">
-</p>
+The user can click on either one of those groups displayed and get the relevent project and task details regarding the group as displayed in the image below.
 
 <p align="center">
-  <img src="./images/11b.png" width="350px">
+  <img src="./images/7a.png" width="350px">
 </p>
 
-To achieve this you have to impelement the `updateProjectStatus(projectId, status)` method in the `groupRepository` file and this time it has to be returning a Promise which has an UPDATE query which updates the status of the project using the projectId. 
+In this challenge your task is to implement the funtionaility to add a new project to the relevent group.
 
-The Promise has to resolve a message saying `"success"`.
+When the user clicks on the `Add Project +` button on the right hand top corner of the page a modal will be visible and when the user enters project details and clicks on the `Save` button an alert will be displayed with a relevent message.
 
-Afterwards as done in the previous tasks you have to,
+<p align="center">
+  <img src="./images/7b.png" width="350px">
+</p>
 
-1. Implement a method called `updateProjectStatusReq(projectId, status)` in the `groupService.js` file which will call the `groupRepository.updateProjectStatus(projectId, status)` method and return the response.
+After the page reloads and upon clicking on the relevent group the newly added project will be displayed on the `To-Do` column.
 
-2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateProjectStatusReq(projectId, status)` method.
+<p align="center">
+  <img src="./images/7c.png" width="350px">
+</p>
 
-**HINT** - Don't forget to export the defined methods in the necessary files.
+To achieve this you first have to implement the `addNewProject(projectDetails)` method inside the `groupRepository.js` file similar to the previous task but in this case the SQL query will be an INSERT query with all the details obtained in the `projectDetails` argument but in the order of the columns in the projects table.
+
+The Promise has to resolve a message saying `"success"` after successfully saving the project details in the projects table in the database.
+
+**Note** - Always cross check with the database tables whether the API calls work properly and the database has been updated. You can always run `knex run:seed` to get back to the default data in the database.

@@ -1,46 +1,37 @@
-# Challenge 9 - Edit project details
+# Challenge 9 - Get the relevent groups of user
 
-The user is able to edit and update the details of a project only if that user is the owner of that project.
-
-<p align="center">
-  <img src="./images/9a.png" width="350px">
-</p>
-
-Note that the above Edit button is only visible is that user is the owner of that project. If the user isn't the owner of that project then the edit button will be hidden.
+In this challenge you're supposed to retrieve the groups of the Hobby Hive user and display them on the side bar under the groups list. Currently the groups list will be empty as shown in the image below.
 
 <p align="center">
-  <img src="./images/9b.png" width="350px">
+  <img src="./images/5a.png" width="350px">
 </p>
 
-After clicking on the save button the updated details will be shown on the project detail modal as shown in the image below.
-
-<p align="center">
-  <img src="./images/9c.png" width="350px">
-</p>
-
-To achieve this you first have to implement the `updateProject(details, projectId)` method inside the `groupRepository.js` file where a Promise with an UPDATE query is returned. 
-
-The Promise has to resolve a message saying `"success"`.
-
-Next you have to implement a method in the `groupService.js` file in the format shown below.
-
+To achieve this you first have to implement the `getGroupsOfUser(userId)` method inside the `groupRepository.js` file which returns a Promise as shown below.
 ```javascript
-async function updateProjectReq(details, projectId) {
-  const response = await groupRepository.updateProject(details, projectId);
-  return { response: response, status: httpStatus.OK };
-}
-```
-
-Finally you have to create the relevent route that is being called from the frontend in the `groupRoutes.js` file as shown below.
-
-```javascript
-router.put("<INSERT ROUTE HERE>", async (req, res) => {
-    // Retrive and define the necessary parameters from the request body and parameter here
-
-
-    const response = await groupService.updateProjectReq(details, projectId);
-    res.status(response.status).json(response);
+return new Promise((resolve, reject) => {
+  knex_db
+    .raw(
+      `
+      <INSERT SQL QUERY HERE>
+      `,
+      [userid]
+    )
+    .then((result) => {
+      const groups = result;
+      resolve(groups);
+    })
+    .catch((error) => {
+      reject(error);
+    });
 });
 ```
 
-**HINT** - Don't forget to export the defined methods in the necessary files.
+Your task is to paste the above code block inside the `getGroupsOfUser(userId)` method and add the relevent sql query which uses the `userId` as a parameter to get the specific groups of the user with the passed userId.
+
+**Note** - There are 3 tables as users, groups, and userGroups and you're supposed to get all information regarding the groups of which the current user is a part of.
+
+After successfully retrieving the groups list using the SQL query the relevent groups will be visible as shown in the image below.
+
+<p align="center">
+  <img src="./images/5b.png" width="350px">
+</p>
