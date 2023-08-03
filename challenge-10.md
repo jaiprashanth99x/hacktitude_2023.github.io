@@ -1,25 +1,15 @@
-# Challenge 10 - Edit task details
+# Challenge 10 - Get users of a group bug fix
 
-The user is also able to edit and update the details of a task of a project.
-
-<p align="center">
-  <img src="./images/10a.png" width="350px">
-</p>
-
-After clicking on the save button the updated details will be shown on the task detail modal as shown in the image below.
+This challenge is to fix a bug in the system where the users of a group is not being retrieved properly and therefore "undefined" is being displayed in the project detail pop up modals as shown in the image below.
 
 <p align="center">
-  <img src="./images/10b.png" width="350px">
+  <img src="./images/6a.png" width="350px">
 </p>
 
-To achieve that you first have to implement the `updateTask(details, taskId)` method inside the `groupRepository.js` file where a Promise with an UPDATE query is returned. 
+Your task is to fix this bug by going through the code base and finally make sure that the relevent names of the users are being displayed in the front end properly as shown in the image below.
 
-The Promise has to resolve a message saying `"success"`.
+<p align="center">
+  <img src="./images/6b.png" width="350px">
+</p>
 
-Afterwards as done in the previous task you have to,
-
-1. Implement a method called `updateTaskReq(details, taskId)` in the `groupService.js` file which will call the `groupRepository.updateTask(details, taskId)` method and return the response.
-
-2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateTaskReq(details, taskId)` method.
-
-**HINT** - Don't forget to export the defined methods in the necessary files.
+**HINT** - This task is similar to the task you'll completed during the test run. 

@@ -1,30 +1,23 @@
-# Challenge 15 - Whiteboard Save & Load
+# Challenge 15 - Update project status
 
-After completing Challenge 13 & 14, your users will be able to join groups now. Once you are a part of group, you can go to the Whiteboard page and view the whiteboard of your joined group.
+In this challenge you have to enable the user to update the status of a project and the project has to be switched to the correct swim lane in the project dashboard depending on its status.
 
 <p align="center">
-  <img src="./images/15a.png" width="700px">
+  <img src="./images/11a.png" width="350px">
 </p>
 
 <p align="center">
-  <img src="./images/15b.png" width="700px">
+  <img src="./images/11b.png" width="350px">
 </p>
 
-Your task involves completing the codes in these following files:
-`colabWhiteBoardRepository.js`,`colabService.js`.
+To achieve this you have to impelement the `updateProjectStatus(projectId, status)` method in the `groupRepository` file and this time it has to be returning a Promise which has an UPDATE query which updates the status of the project using the projectId. 
 
-1. Implement a method called `addWhiteBoardData(data)` in the `colabService.js` file which will call a function of same name and parameter from `colabWhiteBoardRepository.js` method and return a status code of `200` as a success response when a record is created at the `colab_whiteboard` table successfully. Since, the whiteboard is shared by a group, you may need to `UPDATE` an existing record if there is a row with selected `group ID`.
-Expected object for `data` parameter:
-```json
-{
-    whiteboard_json:"<JSON STRING>",
-    group_id:"<SELECTED GROUP ID>",
-    user_id:"<CURRENT USER ID>"
-}
-```
+The Promise has to resolve a message saying `"success"`.
 
-2. Implement a method called `getWhiteBoardDataByGroup(group_id)` in the `colabService.js` file which will call a function of same name and parameter from `colabWhiteBoardRepository.js` method. It will return the whiteboard `data`. This will allow the Whiteboard page to restore the whiteboard content if a group member has made some changes. 
+Afterwards as done in the previous tasks you have to,
 
+1. Implement a method called `updateProjectStatusReq(projectId, status)` in the `groupService.js` file which will call the `groupRepository.updateProjectStatus(projectId, status)` method and return the response.
 
-**HINT** 
--  Make sure to check your JSON is submitted as a string when you are calling the API.
+2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateProjectStatusReq(projectId, status)` method.
+
+**HINT** - Don't forget to export the defined methods in the necessary files.

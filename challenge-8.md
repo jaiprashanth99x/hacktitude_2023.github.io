@@ -1,27 +1,33 @@
-# Challenge 8 - Add new task to a project
+# Challenge 8 - Shared Documents Upload & Download
 
-After successfully completing the Challenge 6 you can now click on the newly create project card and view the project details on the pop-up modal and shown below.
-
-<p align="center">
-  <img src="./images/8a.png" width="350px">
-</p>
-
-In this challenge your task is to implement the funtionaility to add a new task to the relevent project.
-
-When the user clicks on the `Add Task +` button on the modal content will changed and when the user enters the task details and clicks on the `Save` button an alert will be displayed with a relevent message.
+After completing Challenge 13 & 14, your users will be able to join groups now. Once you are a part of group, you can go to the Shared Documents page and view the shared documents of your joined group and download them.
 
 <p align="center">
-  <img src="./images/8b.png" width="350px">
+  <img src="./images/16a.png" width="700px">
 </p>
-
-After the page reloads and upon clicking on the relevent project the newly added task will be displayed under the tasks list.
 
 <p align="center">
-  <img src="./images/8c.png" width="350px">
+  <img src="./images/16b.png" width="700px">
 </p>
 
-To achieve this you first have to implement the `addNewTask(taskDetails)` method inside the `groupRepository.js` file similar to the previous tasks but in this case the SQL query will be an INSERT query with all the details obtained in the `taskDetails` argument but in the order of the columns in the tasks table.
+Your task involves completing the codes in these following files:
+`colabSharedDocsRepository.js`,`colabService.js`.
 
-The Promise has to resolve a message saying `"success"` after successfully saving the task details in the tasks table in the database.
+1. Implement a method called `addNewDoc(data)` in the `colabService.js` file which will call a function of same name and parameter from `colabSharedDocsRepository.js` method and return a status code of `200` as a success response when a record is created at the `colab_shared_docs` table successfully. This function does not actually store the file but it generates a metadata which you can use to grab the file from the actual server where you will be uploading the file to.
+Expected object for `data` parameter:
+```json
+{
+    file_name:"<FILE NAME>",
+    file_desc:"<FILE DESCRIPTION>",
+    file_path:"<FILE PATH>",
+    group_id:"<SELECTED GROUP ID>",
+    user_id:"<CURRENT USER ID>"
+}
+```
 
-**Note** - Always cross check with the database tables whether the API calls work properly and the database has been updated. You can always run `knex run:seed` to get back to the default data in the database.
+2. Implement a method called `getDocById(group_id)` in the `colabService.js` file which will call a function of same name and parameter from `colabSharedDocsRepository.js` method. It will return an array of shared document `data` where the `group Id` matches the selected group. 
+
+
+**HINT** 
+-  For the frontend implementation, you can submit the shared document using a `FormData` interface. The file should be stored under the key, `doc`. 
+- `File Name` and `File Path` do not need to be passed from the frontend as these information can be derived from the actual file data and the assigned server path to store the files.

@@ -1,31 +1,46 @@
-# Challenge 13 - Search For Groups With Keyword and Create New Groups
+# Challenge 13 - Edit project details
 
-In this challenge you have to complete the two features found at the Join Groups page of Collab Hub
-
-<p align="center">
-  <img src="./images/13a.png" width="700px">
-</p>
+The user is able to edit and update the details of a project only if that user is the owner of that project.
 
 <p align="center">
-  <img src="./images/13b.png" width="700px">
+  <img src="./images/9a.png" width="350px">
 </p>
 
-Your task involves completing the codes in these following files:
-`groupRepository.js`,`groupService.js`.
+Note that the above Edit button is only visible is that user is the owner of that project. If the user isn't the owner of that project then the edit button will be hidden.
 
-1. Implement a method called `getGroupsFromKeyword(keyword)` in the `groupService.js` file which will call a function of same name and parameter from `groupRepository.js` method and return an array containing the groups matching to the keyword provided from the frontend.
+<p align="center">
+  <img src="./images/9b.png" width="350px">
+</p>
 
-2. Implement a method called `addNewGroup(data)` in the `groupService.js` file which will call a function of same name and parameter from `groupRepository.js` method and return a status code of `200` as a success response when a new group is created successfully.
+After clicking on the save button the updated details will be shown on the project detail modal as shown in the image below.
 
-Expected object for `data` parameter:
-```json
-{
-    group_name:"<GROUP NAME>",
-    group_desc:"<GROUP DESCRIPTION>"
+<p align="center">
+  <img src="./images/9c.png" width="350px">
+</p>
+
+To achieve this you first have to implement the `updateProject(details, projectId)` method inside the `groupRepository.js` file where a Promise with an UPDATE query is returned. 
+
+The Promise has to resolve a message saying `"success"`.
+
+Next you have to implement a method in the `groupService.js` file in the format shown below.
+
+```javascript
+async function updateProjectReq(details, projectId) {
+  const response = await groupRepository.updateProject(details, projectId);
+  return { response: response, status: httpStatus.OK };
 }
 ```
 
+Finally you have to create the relevent route that is being called from the frontend in the `groupRoutes.js` file as shown below.
 
-**HINT** 
--  When searching for groups using a keyword, you should consider what happens when the keyword returns an empty array. 
-- When inserting a new group into the Groups table, it is useful if you return the new `Id` of the created group.
+```javascript
+router.put("<INSERT ROUTE HERE>", async (req, res) => {
+    // Retrive and define the necessary parameters from the request body and parameter here
+
+
+    const response = await groupService.updateProjectReq(details, projectId);
+    res.status(response.status).json(response);
+});
+```
+
+**HINT** - Don't forget to export the defined methods in the necessary files.
